@@ -482,7 +482,58 @@
           </li>
 		  <?php } ?>
 		 
-
+		 
+		   <?php if($usuario->rol==2 ){?>
+		    <li class="nav-item has-treeview">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fa fa-align-left"></i>
+              <p>
+                Reportes
+                <i class="fa fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="./?view=reportegrados" class="nav-link active">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Reporte por Grados</p>
+                </a>
+              </li>
+             
+            </ul>
+			
+			  <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="./?view=reportealumnos" class="nav-link active">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Reporte por Alumnos</p>
+                </a>
+              </li>
+             
+            </ul>
+			
+			<ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="./?view=reportemateria" class="nav-link active">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Reporte por Materias</p>
+                </a>
+              </li>
+             
+            </ul>
+			
+			<ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="./?view=reporteprofesores" class="nav-link active">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Reporte de Profesores</p>
+                </a>
+              </li>
+             
+            </ul>
+			<?php } ?>
+			
+          </li>
 
 		   </ul>
       </nav>
